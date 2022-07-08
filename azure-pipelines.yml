@@ -5,10 +5,9 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: Deploy to dev
-  displayName: 'Deploy to Dev'
 
 - task: AzureFileCopy@4
+  displayName: 'Deploy to Dev'
   inputs:
     SourcePath: 'src'
     azureSubscription: 'Microsoft Partner Network(a43e7687-a3e6-4d20-8778-bcbd7b4a6721)'
