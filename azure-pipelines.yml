@@ -14,4 +14,6 @@ steps:
     Destination: 'AzureBlob'
     storage: 'jordijolinknlwebdev'
     ContainerName: '$web'
+    AdditionalArgumentsForBlobCopy: '--log-level=DEBUG'
     sasTokenTimeOutInMinutes: '30'
+    cleanTargetBeforeCopy: true
