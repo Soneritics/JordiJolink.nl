@@ -6,7 +6,7 @@ pool:
 
 steps:
 
-- task: AzureFileCopy@3
+- task: AzureFileCopy@4
   displayName: 'Deploy to Dev'
   inputs:
     SourcePath: 'src/*'
