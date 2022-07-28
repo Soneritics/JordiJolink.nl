@@ -9,7 +9,7 @@ steps:
 - task: AzureFileCopy@4
   displayName: 'Deploy to Dev'
   inputs:
-    SourcePath: 'src/*'
+    SourcePath: '$(System.DefaultWorkingDirectory)/src'
     azureSubscription: 'Microsoft Partner Network(a43e7687-a3e6-4d20-8778-bcbd7b4a6721)'
     Destination: 'AzureBlob'
     storage: 'jordijolinknlwebdev'
